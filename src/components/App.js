@@ -27,7 +27,7 @@ class App extends React.Component {
         <ChatApp username={this.state.username} />
       );
     }
-    
+
     // Initial page load, show a simple login form
     return(
       <form onSubmit={this.handleSubmit} className='username-container'>
@@ -35,6 +35,7 @@ class App extends React.Component {
         <div>
           <input type='text' onChange={this.handleChange} placeholder="Enter username..." required />
         </div>
+        <input type="submit" value="Submit" />
       </form>
     )
   }
